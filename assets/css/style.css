@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+/* universal css start*/
+.text-orange{color: #FB5D2D;}
+.text-blue{color: #160732;}
+.text-silver{color: #686884;}
+.bg-orange{background: #FB5D2D;}
+.bg-yellow{background: #f5890d !important;}
+.bg-light-yellow{background: #fee9ca;}
+.top-4 {top: 4%;}
+.top-10{top: 10%;}
+.start-10{left: 10%;}
+.top-20{top: 20%;}
+.mt-10{margin-top: 100px;}
+.mt-15{margin-top: 150px;}
+.mt-20{margin-top: 200px;}
+
+.btn{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    background: #FB5D2D;
+}
+.btn:hover{
+    color: #fff;
+    background: #f5890d;
+}
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+/* /universal css end*/
+
+/* banner section start */
+.banner{
+    width: 100%;
+    height: 700px;
+    background: url(../img/main-banner-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.shape-1{
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}.shape-2{
+    top: 3.5%;
+    left: 50%;
+    animation: move2 2s linear alternate infinite;
+}.shape-3{
+    top: 70%;
+    left: .7%;
+    z-index: 9;
+    animation: move 2s linear alternate infinite;
+}.shape-4{
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+.banner h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: #160732;
+    font-size: bold;
+    margin-bottom: 20px;
+}
+
+/* /banner section end */
+
+
+
+
+@keyframes move{
+    0%{}
+    100%{left: 3%;}
+}
+@keyframes move2{
+    0%{}
+    100%{left: 53%;}
+}
