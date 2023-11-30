@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Poppins&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -20,6 +20,9 @@
 .mt-10{margin-top: 100px;}
 .mt-15{margin-top: 150px;}
 .mt-20{margin-top: 200px;}
+.pt-100{padding-top: 100px;}
+.pb-70{padding-bottom: 70px;}
+.pb-100{padding-bottom: 100px;}
 
 .btn{
     color: #fff;
@@ -44,7 +47,36 @@ p {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #1b0238;
+    font-family: "Catamaran", sans-serif;
+    font-weight: bold;
+}
 /* /universal css end*/
+
+/* Nav section start */
+
+a.active{
+    color: #FB5D2D !important;
+}
+.nav-link:hover,
+.dropdown-item:hover{
+    color: #FB5D2D !important;
+    transition: 0.2s linear;
+}
+.dropdown-menu{
+    width: 280px;
+    border: none;
+    border-radius: 0px;
+    transition: all 4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px #ccc;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 10px;
+}
+
+/* /Nav section end */
 
 /* banner section start */
 .banner{
@@ -68,9 +100,9 @@ p {
     z-index: 9;
     animation: move 2s linear alternate infinite;
 }.shape-4{
-    top: 3.5%;
-    left: .7%;
-    animation: move 2s linear alternate infinite;
+    top: 74%;
+    left: 50%;
+    animation: move3 3s linear alternate infinite;
 }
 .banner h1{
     font-size: 60px;
@@ -82,6 +114,81 @@ p {
 
 /* /banner section end */
 
+/* who we are section start */
+.who span,
+.popular span,
+.core-value span{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FB5D2D;
+    font-family: 'Sacramento', cursive;
+}
+.who h3 
+.popular h3,
+.core-value h3{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.who ul li{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.who ul li span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FB5D2D;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 6px;
+    transition: all 0.5s;
+    font-family: "Catamaran", sans-serif;
+}
+.who ul li:hover span{
+    background: #f5890d;
+    transition: all 0.5s ease-in;
+}
+.who-we-are-shape {
+    position: absolute;
+    top: 750px;
+    max-width: 115px;
+    left: 90%;
+    animation: move4 1s linear alternate infinite;
+    
+}
+/* /who we are section end */
+
+/* popular section start */
+.popular .card:hover img{
+    transform:rotate(2deg) scale(1.07) ;
+    transition: all 0.3s linear;
+}
+
+/* .single-class .class-content .price {
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ea512e;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1;
+    border-radius: 0 0 0 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  } */
+/* /popular section end */
+
+/* core value section start */
+/* /core value section end */
+
 
 
 
@@ -92,4 +199,12 @@ p {
 @keyframes move2{
     0%{}
     100%{left: 53%;}
+}
+@keyframes move3{
+    0%{}
+    100%{top: 70%;}
+}
+@keyframes move4{
+    0%{}
+    100%{left: 89%;}
 }
